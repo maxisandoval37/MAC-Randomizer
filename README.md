@@ -2,6 +2,10 @@
 
 This batch script allows you to change the MAC address of enabled network interfaces on a Windows machine. It generates a random MAC address and applies it to each enabled network interface.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0ceb52af-e3b3-4bc9-b353-e7cc74b1698d"/>
+</p>
+
 ## Requirements
 
 - The script needs administrator privileges to run successfully.
