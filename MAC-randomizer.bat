@@ -1,4 +1,7 @@
-@echo off
+@echo off & setlocal EnableDelayedExpansion
+color 0A
+title MAC-randomizer
+
 :: Check if the script has administrator privileges
 net session >nul 2>&1
 if %errorlevel% neq 0 (
@@ -7,6 +10,32 @@ if %errorlevel% neq 0 (
     powershell -Command "Start-Process '%~f0' -Verb RunAs"
     exit /b
 )
+
+echo.
+echo                  _________-----_____
+echo        ____------           __      ----_
+echo  ___----             ___------              \
+echo     ----________        ----                 \
+echo                -----__    ^|             _____)
+echo                     __-                /     \
+echo         _______-----    ___--          \    /)\
+echo   ------_______      ---____            \__/  /
+echo                -----__    \ --    _          /\
+echo                       --__--__     \_____/   \_/\
+echo                               ---^|   /          ^|
+echo                                  ^| ^|___________^|
+echo                                  ^| ^| ((_(_)^| )_)
+echo                                  ^|  \_((_(_)^|/(_)
+echo                                   \             (
+echo                                    \_____________)
+echo.
+echo.
+
+echo.
+echo ##########################################################
+echo ###########CREDITS BY GITHUB.COM/MAXISANDOVAL37###########
+echo ##########################################################
+echo.
 
 :: Generate a random MAC address
 setlocal enabledelayedexpansion
